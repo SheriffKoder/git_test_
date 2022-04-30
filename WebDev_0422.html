@@ -15,6 +15,11 @@
         <style>
             /*  */
 
+            .redtext {
+
+                color: red;
+
+            }
 
 
 
@@ -36,11 +41,19 @@
         </h1>
 
         <p>
-            The purpose of this file is to have lines of code put
-            as we learn and get used to the habit of committing and updating our files on GitHub
+            The purpose of this file is to have lines of 
+            code put as we learn and get used to the habit 
+            of committing and updating our files on GitHub
         </p>
 
         <br> <hr> <br>
+
+
+
+        <p id="greenplanet">
+            Paraghraph with id greenplanet
+        </p>
+
 
 
 
@@ -53,7 +66,17 @@
         //console.log("Hello World");
 
 
+        /*/////////////////////////////////////////////////*/
+        /* take greenplanet html-paragraph, change its HTML, 
+        ,set a new css-class, output a new html describing 
+        the css-class  */
 
+        let planet = document.getElementById("greenplanet");
+
+        planet.setAttribute ("class", "redtext");
+
+        let att = planet.getAttribute("class");
+        planet.innerHTML = "Hello this text now is in " + att + " class";
 
 
 
