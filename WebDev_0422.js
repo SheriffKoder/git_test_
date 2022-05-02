@@ -88,3 +88,35 @@
 	if ( y === x.model) {
 		console.log("value = object value");
 	}
+
+
+        /*/////////////////////////////////////////////////*/
+        /* false conditions (falsey), none of them are true */
+
+        if (0)
+                console.log("true");
+        if (NaN)
+                console.log("true");
+        if("")//empty string, not even an empty space
+                console.log("true");
+        if(document.getElementById("unexsitingElement0205"))
+                console.log("true");
+        
+        let UndeFined_Variable0205;
+        if(UndeFined_Variable0205)
+                console.log("true");
+        if (null)
+                console.log("true");
+
+
+        /* but guess what!, these are true */
+        if (1)
+                console.log("true");
+
+        if([])
+                console.log("true");
+
+        if({})
+                console.log("true");
+
+
