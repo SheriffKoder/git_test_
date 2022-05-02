@@ -2,7 +2,7 @@
 
         //console.log("Hello World");
 
-
+        /*/////////////////////////////////////////////////*/
         /*////////////////////01/05/////////////////////////*/
         /* take greenplanet html-paragraph, change its HTML, 
         ,set a new css-class, output a new html describing 
@@ -41,6 +41,7 @@
         /* === operator searches for equality in type and value */
 
 
+        /*/////////////////////////////////////////////////*/
         /*////////////////////02/05/////////////////////////*/
 
         /* mathematical operators */
@@ -56,4 +57,34 @@
         //console.log(subtract02052);
 
 
-        
+
+        /*/////////////////////////////////////////////////*/
+        /* objects and equality operators */
+        /* an object is equal only to an object or variable 
+        if only holding its reference not value */
+
+	var chevyobject = { 
+		make: "Chevy",
+		model: "Bel Air",
+	};
+
+	var fordobject = { 
+		make: "Chevy",
+		model: "Bel Air",
+	};
+
+	var x = chevyobject;
+	let y = "Bel Air";
+	let z = fordobject.model;
+
+	if (chevyobject === fordobject) { //not equal, different references
+		console.log("object 1 = object 2");
+	}
+
+	if (chevyobject === x) { // equal, x points to same reference
+		console.log("object 1 = object 2");
+	}
+
+	if ( y === x.model) {
+		console.log("value = object value");
+	}
