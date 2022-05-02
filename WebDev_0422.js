@@ -120,3 +120,10 @@
                 console.log("true");
 
 
+        /*/////////////////////////////////////////////////*/
+        /* string can be primitive and an object to use functions with  */
+
+        let text = "HELLO";
+        text.toLowerCase();
+        if (text.charAt(1) === "E")
+                console.log("found an E in the 2nd letter"); 
