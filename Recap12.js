@@ -65,3 +65,28 @@
 	}
 
 	Read_image_source_by_id ();
+
+
+	/*/////////////////////////////////////////////////////////*/
+	/* function can determine a certain message and a specific 
+	color(string output) based on the input (score) and returns
+	these values to be reused outside the function */
+	function output_select (score) {
+
+		let score_output_object = {
+			'0.5' : { message: 'you tied', color: 'blue'},
+			'0' : { message: 'you lost', color: 'red'},
+			'1' : { message: 'you won', color: 'green'},
+		};
+
+
+	//return score_output_object[score];
+	return score_output_object[score];
+
+	}
+
+	let player_score = 0.5;
+	let x = output_select(player_score);
+	console.log (x['message']);
+	console.log (x['color']);
+
