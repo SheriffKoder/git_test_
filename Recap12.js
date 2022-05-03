@@ -90,3 +90,20 @@
 	console.log (x['message']);
 	console.log (x['color']);
 
+
+
+	/*/////////////////////////////////////////////////////////*/
+	/* append image to the div in html using creatElement, 
+	set src to either object value or a local destination, 
+	also set a class for image size and finally append the 
+	created element to the div by div's id */
+
+	let image = document.createElement('img');
+	image.src = "./google.png";
+	image.setAttribute('class', 'smallimage');
+	document.getElementById('Div_ID').appendChild(image);
+
+
+
+	
+	/*/////////////////////////////////////////////////////////*/

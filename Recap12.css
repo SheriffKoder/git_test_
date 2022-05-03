@@ -1,0 +1,12 @@
+.bordered_with_HW {
+
+    border: 1px solid grey;
+    height: 200px;
+    width: 200px;
+
+}
+
+.smallimage {
+    height: 100px;
+    width: 100px;  
+}
