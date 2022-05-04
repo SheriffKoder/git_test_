@@ -127,3 +127,31 @@
         text.toLowerCase();
         if (text.charAt(1) === "E")
                 console.log("found an E in the 2nd letter"); 
+
+
+
+
+        /*/////////////////////////////////////////////////*/
+        ////JS Built in STRING functions that can be used for checks
+	////js interpreter temp converts strings into an object
+
+	let name = "john smith";
+	let phone = "0123456789";
+
+	//return the starting position of ""
+	//var index2 = name.indexOf("h"); //found starting position #2
+	//var index2 = name.lastIndexOf("h"); // last occurance at position #9
+	//var index2 = name.indexOf("h", 5); //start finding from position #5, the next "h" in positon 9
+	//var index2 = name.lastIndexOf("h", 5); // last occurance right to left starting postion 5, will be the #2
+	//var index2 = phone.substring(6); //outputs a string of items in position 6 onwards
+	//var index2 = phone.substring(6,8); // string ~from 6 to the position before 8 (7)
+	//var index2 = phone.split("45"); // replace 45 with a string splitter
+	//var index2 = name.trim(); //removes white space AROUND string
+	//var index2 = name.match("op"); //searches for "mi" and returns it, else null, object
+	//var index2 = name.replace("smith", "junior"); //replaces string1 with string2
+	//var index2 = name.concat(phone,phone); //attached two or more strings together
+	var index2 = name.toUpperCase(); //upper case convert
+	
+	console.log(name);
+	console.log(index2);
+	console.log(typeof index2);
