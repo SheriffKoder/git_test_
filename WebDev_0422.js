@@ -131,6 +131,7 @@
 
 
 
+        /*////////////////////04/05/////////////////////////*/
         /*/////////////////////////////////////////////////*/
         ////JS Built in STRING functions that can be used for checks
 	////js interpreter temp converts strings into an object
@@ -155,3 +156,58 @@
 	console.log(name);
 	console.log(index2);
 	console.log(typeof index2);
+
+
+
+        /*/////////////////////////////////////////////////*/
+        /*Question: make a function that checks for the string 123-4567 
+	and accepts only it if it does the following
+	1)same length 
+	2)sting contains only digits from 0-9 
+	3)but a dash in position #3 and it should be there
+	3.A) able to quickly adjust to not contain all numbers no dash
+	*/
+
+
+	//take the phone number
+	let phonenumber = "123-4567";
+
+	let output = check2 (phonenumber);
+	console.log("the entered number format is",output);
+
+	function check2 (A) {
+
+		//console.log(typeof A[3]);
+
+		//Answer to point 3.A : replace OR condition #2 by checkNaN (3,4,A)
+		if (	(A.length !== 8) || (A[3]!=="-" ) || checkNaN (0,3,A) == false || checkNaN (5,A.length-1,A) == false  ) {
+
+		        return false;
+		}
+
+
+		return true;
+
+	}
+
+	//let A = phonenumber;
+	//console.log ( checkNaN (5,A.length-1,A) );
+	function checkNaN (	start, end, A2	) {
+
+		for (i=start; i<end; i++ ) {
+
+
+			//cant === nan , a[i] is string
+			//console.log(A[i]);		//opps! a string
+			let x = A2[i] - 0;			//needed to convert the A[i] to a number, this did the trick
+			//console.log(x);			//not affected
+			//console.log(typeof x); 	//and still a number
+
+			if (isNaN(x)) {
+					//console.log("not a number");
+					return false;
+			}
+		}
+		return true;
+	}
+
