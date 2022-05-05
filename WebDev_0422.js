@@ -211,3 +211,27 @@
 		return true;
 	}
 
+
+        console.log("/////0505/////");
+        /*////////////////////05/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        /* instanceof checks test if from object-function 
+        and returns true or false
+        */
+
+
+        function Func ( output ) {
+                this.output = output;
+                this.DoSomething = function () {
+                        console.log (this.output);
+                }
+
+
+        }
+
+        var test = new Func ("sometext");
+        test.DoSomething();
+        console.log(typeof test);
+        console.log(test instanceof Func);
+
