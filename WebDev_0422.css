@@ -6,6 +6,42 @@
 }
 
 
+#board {
+    border: 1px solid red;
+
+    height: 310px;
+    width: 450px;
+}
+
+
+#table1 {
+    border: 1px solid yellow;
+    padding: 0px;
+    border-collapse: collapse;
+
+
+    position: relative; /*position by top/left in relative to its container whether its body or div*/
+    /*position: absolute; position by top/left in relative to the page */
+
+    top: 10;
+    left: 10;
+
+}
+
+.placehit {
+
+    background : url("ship.png") no-repeat center;
+    background-color: black;
+}
+
+table td { /* set the width of the table by its data elements*/
+    height:75px;
+    width: 100px;
+    border: 1px solid blue;
+}
+
+
+
 
 /* making a coupon like header */
 
