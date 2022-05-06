@@ -1,9 +1,26 @@
-            /*  */
+/*  */
 
-            .redtext {
+.redtext {
 
-                color: red;
+    color: red;
+}
 
-            }
 
 
+/* making a coupon like header */
+
+#header { /* this div will have a header fixed on beginning of page*/
+    width: 94%;
+    position: fixed; /* be a header on scroll */
+    /* position: sticky;  stays in its place and be a header on scroll */
+
+    top: 0; /*place it at starting pixel*/
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+
+}
+
+
+.dummy_text1 {
+    padding-bottom: 1000px;
+}
