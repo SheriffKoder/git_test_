@@ -235,3 +235,20 @@
         console.log(typeof test);
         console.log(test instanceof Func);
 
+
+        /*////////////////////06/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        /* object of functions */
+
+        var view = {
+
+                displaymessage : function (text) {
+                                        let textspace = document.getElementById("greenplanet2");
+                                        textspace.innerHTML = text;
+                                        textspace.setAttribute("class", "redtext");
+                                },
+        };
+
+        var want_to_show = "TEXT through object of functions";
+        view.displaymessage(want_to_show);
