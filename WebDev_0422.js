@@ -252,3 +252,34 @@
 
         var want_to_show = "TEXT through object of functions";
         view.displaymessage(want_to_show);
+
+
+
+
+        /*////////////////////07/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        var model = {
+
+        numShips: 2,
+
+        //ships1: [1,2,3],
+        //can also make an array of objects inside it instead of numbers
+        //{location["10", "20", "30"], hits: [" ", " ", " "]}
+        ships1: [
+                {locations:["10", "20", "30"], hits: [" ", " ", " "]},
+                2,//replace
+                3,//replace
+        ],
+
+        get_output: function () {
+        
+        
+                console.log(this.ships1[0].locations[0]);
+                //ship1, item
+
+        }
+ 
+        }
+
+        model.get_output();
