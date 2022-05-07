@@ -62,7 +62,7 @@ table td { /* set the width of the table by its data elements*/
 }
 
 
-        /*////////////////////05/05/////////////////////////*/
+        /*////////////////////07/05/////////////////////////*/
         /*/////////////////////////////////////////////////*/
 
         /* the following lines are edits done in a wordpress project*/
@@ -93,3 +93,21 @@ table td { /* set the width of the table by its data elements*/
             border-style: groove;
         }
 
+
+        /*use the same method before to re-style the css of the 
+        submenu classes in mobile version*/
+
+        .ast-mobile-header-wrap .ast-mobile-header-content, .ast-desktop-header-content{
+            background-color: rgba(52, 52, 52, 0.1) !important;
+            
+        }
+
+        li a:hover {
+            background-color: rgba(0, 0, 0, 0.1) !important;	
+        }
+
+        /* Li a:active set in editor for #ffffff12 */
+
+        .ast-builder-menu-mobile .main-navigation .main-header-menu .menu-item > .menu-link {
+            color: white;
+        }
