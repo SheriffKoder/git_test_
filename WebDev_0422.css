@@ -60,3 +60,36 @@ table td { /* set the width of the table by its data elements*/
 .dummy_text1 {
     padding-bottom: 1000px;
 }
+
+
+        /*////////////////////05/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        /* the following lines are edits done in a wordpress project*/
+
+        /* problem: header sub-menu was white and could not see text (white also)*/
+        /* solution: make the sub menu items in header transparent for the text to show*/
+
+        .sub-menu{
+            background-color: rgba(0, 0, 0, 0.1) !important;
+            width: 453px !important;
+        }
+
+        .sub-menu li a {
+            color: #F0F0F0 !important;
+
+        }
+        .sub-menu li a:hover{
+            background-color: rgba(52, 52, 52, 0.1) !important;
+            width: 453px !important;
+            color: #ffffff !important;
+
+        }
+
+
+        .ast-builder-menu-1 .sub-menu, .ast-builder-menu-1 .inline-on-mobile .sub-menu {
+            border-color: white;
+            border-top-width: 1px;
+            border-style: groove;
+        }
+
