@@ -261,25 +261,58 @@
 
         var model = {
 
-        numShips: 2,
+                numShips: 2,
 
-        //ships1: [1,2,3],
-        //can also make an array of objects inside it instead of numbers
-        //{location["10", "20", "30"], hits: [" ", " ", " "]}
-        ships1: [
-                {locations:["10", "20", "30"], hits: [" ", " ", " "]},
-                2,//replace
-                3,//replace
+                //ships1: [1,2,3],
+                //can also make an array of objects inside it instead of numbers
+                //{location["10", "20", "30"], hits: [" ", " ", " "]}
+                ships1: [
+                        {locations:["10", "20", "30"], hits: [" ", " ", " "]},
+                        2,//replace
+                        3,//replace
         ],
 
-        get_output: function () {
+                get_output: function () {
         
         
-                console.log(this.ships1[0].locations[0]);
-                //ship1, item
+                        console.log(this.ships1[0].locations[0]);
+                        //ship1, item
+                        //this.ships1 or model.ships1
 
-        }
+                }
  
         }
 
         model.get_output();
+
+
+        /*////////////////////08/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+        console.log("/////08/05/////");
+
+        /*function takes a string and divides it
+        to take the first part and return another value from it
+        from a reference */
+
+        function divideinput ( input ) {
+
+                let Reference_Chars = ["A", "B"]; 
+                let input_part1 = input.charAt(0);
+                let input_part2 = input.charAt(1);
+
+                console.log(input_part1);
+
+                let new_input = Reference_Chars.indexOf(input_part1);
+                //will be A in this case, find its place in Reference_Chars
+                //and use this reference as the new input
+                console.log( typeof new_input);
+                console.log(new_input);
+
+                return new_input + input_part2;
+        }
+
+
+        let variable0805 = divideinput("A3");
+        console.log (variable0805); //03
+
+        /*/////////////////////////////////////////////////*/
