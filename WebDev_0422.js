@@ -316,3 +316,44 @@
         console.log (variable0805); //03
 
         /*/////////////////////////////////////////////////*/
+        /* series of functions take text from HTML_input
+        and display it in console either by Clicking a Button
+        or entering the text then pressin enter (ASCII key13)*/
+
+        function Handle_input () {
+                var inputText = document.getElementById("Input_id");
+                var inputValue = inputText.value;
+
+                //take value from id
+                console.log(inputValue);
+        }
+
+        //function need to be called after put value
+        //get button id and onclick = call function
+        //or
+        //get input id and onkeypress (click the button)
+        //e needs a reference passed from onkeypress so will copy that to another function
+
+
+        function init () {
+                var InputButton = document.getElementById("Button_id");
+                InputButton.onclick = Handle_input;
+
+
+                var inputText = document.getElementById("Input_id");
+                inputText.onkeypress = keypressfunction;
+        }
+
+        function keypressfunction (e) {
+                var InputButton = document.getElementById("Button_id");
+                
+
+                if (e.keyCode === 13) {
+                        InputButton.click();
+                }
+
+        }
+
+        init();
+
+        /*/////////////////////////////////////////////////*/
