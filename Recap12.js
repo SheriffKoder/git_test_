@@ -156,3 +156,16 @@
 		document.getElementById('Div_ID').appendChild(TextResult);
 
 	
+	/*/////////////////////////////////////////////////////////*/
+	/*	function called on change selection,
+	by passing this(selection), we can get option"value" selected by 
+	this.value	*/
+
+
+	function selection_function (input_selection) {
+
+		let input_value = input_selection.value;
+		console.log(input_value);
+
+
+	}
