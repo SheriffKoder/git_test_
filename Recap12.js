@@ -107,3 +107,52 @@
 
 	
 	/*/////////////////////////////////////////////////////////*/
+	/*/////////////////////////////////////////////////////////*/
+	/*	h1 inline style color, passed color, h1 message	*/
+	/* make a new div and add to it an h1 with 
+	the score message and style it with the score color
+	then add it to the html div */
+
+
+		let newDiv = document.createElement('div');
+		//let testdiv = document.getElementById('Div_ID');
+		newDiv.innerHTML = 	"<h1 style='color:" + x['color']+ "; font-size:20px; '>" +
+		x['message']
+		+ "</h1>";
+
+		document.getElementById('Div_ID').appendChild(newDiv);
+
+
+	/* 1) add an image to the html div using html
+	 2) and set its height 3) the image source is from an object*/
+	/* 4) using js, add style to the div being created before appending */
+
+		let image_reference = {
+			image1 : "./google.png",
+			color: 'yellow',
+			message: "hello world",
+		};
+
+
+		let newDiv2 = document.createElement('div');
+
+		newDiv2.style.boxShadow = "0px 10px 50px rgba(243, 38, 24, 1)";
+
+		newDiv2.innerHTML = "<img src = '" + image_reference['image1'] + "'; height=50;>";
+		document.getElementById('Div_ID').appendChild(newDiv2);
+
+		console.log(image_reference['image1']);
+
+
+	/*	concern to figure out: yes you can add style-color using 
+	an object item (can be used in interactive applications)*/
+	
+		let textAnswer2 = document.createTextNode(image_reference['message']);
+
+		let TextResult = document.createElement('div');
+		TextResult.style.color = image_reference["color"];
+
+		TextResult.appendChild(textAnswer2);
+		document.getElementById('Div_ID').appendChild(TextResult);
+
+	
