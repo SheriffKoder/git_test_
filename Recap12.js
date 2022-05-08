@@ -169,3 +169,35 @@
 
 
 	}
+
+
+	
+	/*/////////////////////////////////////////////////////////*/
+	/* get element by its tagname i.e type, access a specific element's 
+	pecific "class" using classList array
+	store this class in an array
+	remove a class from a button
+	add a class to a button using class list*/
+
+	//
+	let buttons = document.getElementsByTagName('button');
+	console.log(buttons);
+	let z = buttons[1].classList[1];
+	console.log(buttons[1].classList[1]+" : before");
+	console.log(z);
+
+	//
+	let current_classes = [];
+	current_classes.push(z);
+	console.log(current_classes);
+
+	//
+	buttons[1].classList.remove(z);
+	console.log(buttons[1].classList[1]+ " : after");
+
+	//
+	let Red_button = "reddish";
+	buttons[1].classList.add(Red_button);
+
+
+	/*
