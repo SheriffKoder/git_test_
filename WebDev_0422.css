@@ -127,6 +127,7 @@ table td { /* set the width of the table by its data elements*/
             width: 150px;
             padding: 10px;
             display: inline-block; /* inline can be overlayed, block, no overlay its space and line, inline-block in the line but it has its space*/
+            margin-right: 50px; /*both margins will be added but if display inline-block is removed, the largest margins only will be used as margins will collapses*/
         }
 
 
@@ -136,7 +137,7 @@ table td { /* set the width of the table by its data elements*/
             width: 150px;
             padding: 10px;
             display: inline-block;
-            margin: 10px;
+            margin-left: 100px;
 
 
         }
