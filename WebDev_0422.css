@@ -58,7 +58,7 @@ table td { /* set the width of the table by its data elements*/
 
 
 .dummy_text1 {
-    padding-bottom: 1000px;
+    padding-bottom: 10px;
 }
 
 
@@ -110,4 +110,33 @@ table td { /* set the width of the table by its data elements*/
 
         .ast-builder-menu-mobile .main-navigation .main-header-menu .menu-item > .menu-link {
             color: white;
+        }
+
+
+        /*////////////////////10/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        * {
+
+        }
+        
+        .box1 {
+            box-sizing: border-box;
+            border: 5px solid purple;
+            height: 150px;
+            width: 150px;
+            padding: 10px;
+            display: inline-block; /* inline can be overlayed, block, no overlay its space and line, inline-block in the line but it has its space*/
+        }
+
+
+        .box2 {
+            border: 5px solid purple;
+            height: 150px;
+            width: 150px;
+            padding: 10px;
+            display: inline-block;
+            margin: 10px;
+
+
         }
