@@ -410,3 +410,29 @@
         }
 }
         
+        /*/////////////////////////////////////////////////*/
+
+        /*ok i have positions = [ 00, 01, 02 ] 
+        want to check in the 3 ships array 
+        in each ship object locations find if this position is found*/
+
+        let ship = {
+                locations: ["11", "10", "01"] , 
+                hit: ["", "", ""],
+        };
+
+        console.log(ship.locations);
+        console.log (typeof ship.locations[1]);
+
+        let positions = ["00", "01", "01"];
+
+        console.log(positions[1]);
+        console.log (typeof positions[1]);
+
+        for (i=0 ; i < positions.length; i++ ) {
+          let check = ship.locations.indexOf(positions[i]);
+          if ( check >= 0 ) {
+                console.log("found at " + check);
+
+          }
+        }
