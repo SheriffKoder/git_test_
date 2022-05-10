@@ -157,3 +157,15 @@ table td { /* set the width of the table by its data elements*/
             transform: rotate(-3deg);
             }
 
+                    
+        /*/////////////////////////////////////////////////*/
+
+        /* changing the text selection color */
+        p::selection {
+            color: white;
+            background: blueviolet;
+          }
+        
+        /*/////////////////////////////////////////////////*/
+
+          
