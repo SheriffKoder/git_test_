@@ -99,7 +99,12 @@
 	created element to the div by div's id */
 
 	let image = document.createElement('img');
-	image.src = "./google.png";
+
+	let imageName = "google";
+
+	/*can use a (changing)variable to give the name for the file
+	by using ``instead of "" and placing ${variablename}.type*/
+	image.src = `./${imageName}.png`;
 	image.setAttribute('class', 'smallimage');
 	document.getElementById('Div_ID').appendChild(image);
 
@@ -205,20 +210,13 @@
 	/*////////////////////10/05/////////////////////////*/
     /*/////////////////////////////////////////////////*/
 
-
+	/*incrementing a value in object */
         let obj_test = {
 
 			currentvalue: 0,
 
 	};
 
-
-
 	obj_test.currentvalue++;
 	console.log (obj_test.currentvalue);
 
-
-	function playsound () {
-	WinSound = new Audio ('/file.mp3');
-	WinSound.play();
-	}

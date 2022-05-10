@@ -356,4 +356,18 @@
 
         init();
 
+
+        /*////////////////////10/05/////////////////////////*/
         /*/////////////////////////////////////////////////*/
+
+
+        let obj_test = {
+
+                currentvalue: 0,
+
+        };
+
+
+
+        obj_test.currentvalue++;
+        console.log ("obj_test.currentvalue");
