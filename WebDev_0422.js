@@ -358,7 +358,7 @@
 
         /*/////////////////////////////////////////////////*/
 
-
+        /* conditioned do while loops */
         function ConditionedLoop () {
 
           let x=2;
@@ -370,4 +370,43 @@
 
         }
 
-        ConditionedLoop ();
+        //ConditionedLoop ();
+
+        /*/////////////////////////////////////////////////*/
+
+        function generatePostition () {
+        
+        let XorY = Math.floor(Math.random()*2); //0 to 1
+        let row, col;
+        let boardSize = 3;
+        let elementLength = 2;
+        let boardbordergap = elementLength - 1;
+        if (XorY === 1) { //then Y is selected
+        row = Math.floor (Math.random () * boardSize);
+        col = Math.floor (Math.random () * boardSize - boardbordergap);
+        
+
+        // boardsize 3 and elementlength 2, then bordergap is 1,
+        // and we want from 0 to 1 i.e 2 for col, so boardsize-bordergap = 2        
+        //and we want 0,1,2 *3,, 0,1 *2 3-1 , 2-1=1, 3-1=2
+        // boardsize 6 and elementlength 3, then bordergap is 2,
+        // and we want from 0 to 3 i.e 4 for col, so boardsize-bordergap = 4
+        // 0,1,2,3,4,5 *6, 0,1,2,3 *4 (3-1)=2, 6-2=4
+
+        }
+        
+        else {
+                //the opposite in row/col
+        }
+
+        //if element length is 2, want the col to have value+0,value+1, 0->1 i.e 
+        if (XorY == 1) {
+                for (i=0; i < elementLength; i++) {
+                        newLocations.push (row + (col+i));
+                }
+        }
+        else {
+                //the opposite in row/col
+        }
+}
+        
