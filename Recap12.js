@@ -220,3 +220,28 @@
 	obj_test.currentvalue++;
 	console.log (obj_test.currentvalue);
 
+	/*/////////////////////////////////////////////////*/
+
+	/* query selector is another way of receiving 
+	elements by their id or variables 
+	
+	buttons we can use html on click
+	we can use get element by id 
+	and element.onclick = function
+	and element.addeventlistener('click', function)
+
+	we can play a sound file using play(); 
+	but have to put the file's src file using new Audio var
+	*/
+
+	let YY = "#buttonTest";
+	let buttonX = document.querySelector(YY);
+	//let buttonX = document.querySelector("#buttonTest");
+
+	buttonX.addEventListener('click', playsound);
+
+
+	function playsound () {
+		const WinSound = new Audio ('sounds/file.mp3');
+		WinSound.play();
+	}
