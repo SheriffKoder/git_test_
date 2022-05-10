@@ -141,3 +141,19 @@ table td { /* set the width of the table by its data elements*/
 
 
         }
+
+
+
+        /*/////////////////////////////////////////////////*/
+
+        /* styling allows an image to be rotated a bit on hover */
+
+        #RotateHover {
+            transition: transform .1s ease-in-out;
+            padding-left: 10px;
+        
+          }
+          #RotateHover:hover {
+            transform: rotate(-3deg);
+            }
+
