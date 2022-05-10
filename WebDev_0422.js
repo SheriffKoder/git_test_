@@ -356,18 +356,18 @@
 
         init();
 
-
-        /*////////////////////10/05/////////////////////////*/
         /*/////////////////////////////////////////////////*/
 
 
-        let obj_test = {
+        function ConditionedLoop () {
 
-                currentvalue: 0,
+          let x=2;
 
-        };
+          do {
+             x = prompt ("enter a value");
+          } while (x > 0);
+                
 
+        }
 
-
-        obj_test.currentvalue++;
-        console.log ("obj_test.currentvalue");
+        ConditionedLoop ();
