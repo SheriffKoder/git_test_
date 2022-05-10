@@ -171,7 +171,7 @@
 	}
 
 
-	
+
 	/*/////////////////////////////////////////////////////////*/
 	/* get element by its tagname i.e type, access a specific element's 
 	pecific "class" using classList array
@@ -201,3 +201,24 @@
 
 
 	/*
+
+	/*////////////////////10/05/////////////////////////*/
+    /*/////////////////////////////////////////////////*/
+
+
+        let obj_test = {
+
+			currentvalue: 0,
+
+	};
+
+
+
+	obj_test.currentvalue++;
+	console.log (obj_test.currentvalue);
+
+
+	function playsound () {
+	WinSound = new Audio ('/file.mp3');
+	WinSound.play();
+	}
