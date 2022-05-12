@@ -245,3 +245,34 @@
 		const WinSound = new Audio ('sounds/file.mp3');
 		WinSound.play();
 	}
+
+	/*////////////////////12/05/////////////////////////*/
+    /*/////////////////////////////////////////////////*/
+
+		/*function allows by clicking an element to change 
+	the element's source, then after 1000ms return the src back automatically
+	
+	/*take clicked input value and use it to get the id of
+	that value in order to change the src of this id referece
+
+	*/
+	function display (input) {					//getX
+
+		console.log ("///////1");
+		console.log(input);
+		let newinput = document.getElementById(input);	//get of Xid
+		newinput.src = `./zero${input}.jpg`		//Xid set sourceX
+		globalinput = input;					//global input
+		setTimeout(reversedisplay, 1000); 		//Timeout and call function
+
+
+
+	}
+
+	function reversedisplay () {
+		console.log ("///////2");
+		console.log("timeout");
+		console.log(globalinput);
+		let newinput = document.getElementById(globalinput);
+		newinput.src = `./zeroblur${globalinput}.jpg`
+	}
