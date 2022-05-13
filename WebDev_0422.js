@@ -412,9 +412,9 @@
         
         /*/////////////////////////////////////////////////*/
 
-        /*ok i have positions = [ 00, 01, 02 ] 
-        want to check in the 3 ships array 
-        in each ship object locations find if this position is found*/
+        /*have positions = [ 00, 01, 02 ] 
+        want to check in the 3 ships array, but let us try one ship locations
+        in the ship object locations find if any of the positions are found*/
 
         let ship = {
                 locations: ["11", "10", "01"] , 
@@ -436,3 +436,14 @@
 
           }
         }
+
+
+        /*////////////////////13/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        var images = document.getElementsByTagName("img"); //object type (nodelist) 	//nodelist, technical name for the element objects in the dom
+	//can iterate over it by its length, and access each in the list
+
+        var image = eventObj.target; //target tells us what element generated the event
+        //hold object event occured, element object
+
