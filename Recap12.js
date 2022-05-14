@@ -276,3 +276,29 @@
 		let newinput = document.getElementById(globalinput);
 		newinput.src = `./zeroblur${globalinput}.jpg`
 	}
+
+
+	/*////////////////////14/05/////////////////////////*/
+	/*//////////////////////////////////////////////////*/
+
+	/*
+	using querySelector instead of Div_ID
+	accessing the type Nodelist by querySelectorAll
+	*/
+
+	function queryFunction () {
+
+
+		let yourImages = document.querySelector('#Div_ID');
+		//yourImages.textContent = 'TEXT Changed';
+
+		let yourImages2 = document.querySelectorAll('img');
+		
+		for (i =0 ; i< yourImages2.length; i++) {
+			yourImages2[i].src = "google1.png";
+		}
+
+	}
+
+
+	queryFunction();
