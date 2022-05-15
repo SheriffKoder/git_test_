@@ -441,9 +441,40 @@
         /*////////////////////13/05/////////////////////////*/
         /*/////////////////////////////////////////////////*/
 
-        var images = document.getElementsByTagName("img"); //object type (nodelist) 	//nodelist, technical name for the element objects in the dom
+        //var images = document.getElementsByTagName("img"); //object type (nodelist) 	//nodelist, technical name for the element objects in the dom
 	//can iterate over it by its length, and access each in the list
 
-        var image = eventObj.target; //target tells us what element generated the event
+        //var image = eventObj.target; //target tells us what element generated the event
         //hold object event occured, element object
 
+
+
+        /*////////////////////15/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+
+        /*function lets you capture all image elements in a NodeList
+        then can access onclick the image with a function
+        that displays the id of target */
+
+        function init2 () {
+
+                let images = document.getElementsByTagName('img');
+
+                images[1].id = "one"
+                console.log(images[1].id);
+
+                for (var i=0; i<images.length; i++) {
+                        images[i].onclick = showAnswer;
+                }
+        }
+
+
+        init2();
+
+        function showAnswer (x) {
+
+                var input = x.target;
+                console.log(input.id);
+                //here we can change id, src etc.
+        }
