@@ -247,3 +247,30 @@ table td { /* set the width of the table by its data elements*/
               color: #264ee4;
               text-transform: uppercase;
           }
+
+
+
+          /*inline elements do not break into a new line 
+          and do not respect the margin and padding of the 
+          element and cant get height width properties*/
+
+          .blockdiv, .inlinespan {
+              border: 2px solid black;
+              height: 200px;
+              width: 200px;
+              margin: 10px;
+              padding: 10px;
+
+          }
+
+        /*giving an inline element the inline-block value,
+        element can have height/width and margin/padding respect*/
+          .blockspan {
+              display: inline-block;
+              border: 2px solid black;
+              height: 200px;
+              width: 200px;
+              margin: 10px;
+              padding: 10px;
+
+          }
