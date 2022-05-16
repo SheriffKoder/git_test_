@@ -272,5 +272,18 @@ table td { /* set the width of the table by its data elements*/
               width: 200px;
               margin: 10px;
               padding: 10px;
+              margin-left: auto;
+              margin-right: auto;
+  
 
+          }
+
+        /* margin-left auto pushes to left
+        when combined with right: auto, element get centered
+        works on pure block elements only */
+
+          .blockdiv {
+            margin-left: auto;
+            margin-right: auto;
+            background-color: red;
           }
