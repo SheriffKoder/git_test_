@@ -478,3 +478,18 @@
                 console.log(input.id);
                 //here we can change id, src etc.
         }
+
+
+        /*////////////////////17/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        /* every 3000ms call function, if input is "1", stop counting */
+
+        function timeHandler () {
+                let x = prompt ("enter value");
+                if (x=="1") {
+                        clearInterval (timeHandlerVariable);
+                }
+        }
+
+        //let timeHandlerVariable = setInterval(timeHandler, 3000);
