@@ -257,7 +257,6 @@ table td { /* set the width of the table by its data elements*/
           .blockdiv, .inlinespan {
               border: 2px solid black;
               height: 200px;
-              width: 200px;
               margin: 10px;
               padding: 10px;
 
@@ -287,3 +286,22 @@ table td { /* set the width of the table by its data elements*/
             margin-right: auto;
             background-color: red;
           }
+
+
+        /*////////////////////18/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        /*hide item and its space without actually removing */
+        .HideNoRemove {
+            display: none;
+        }
+
+        /*hide item and not its space without actually removing */
+        .HideKeepSpace {
+            visibility: hidden;
+        }
+
+        /*keep the width to window but grow with over size*/
+        .MaxWidth_KeepwithBrowserWidth {
+            max-width: 800px;
+        }
