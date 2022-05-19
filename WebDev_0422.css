@@ -257,6 +257,7 @@ table td { /* set the width of the table by its data elements*/
           .blockdiv, .inlinespan {
               border: 2px solid black;
               height: 200px;
+              width: 200px;
               margin: 10px;
               padding: 10px;
 

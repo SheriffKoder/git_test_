@@ -493,3 +493,16 @@
         }
 
         //let timeHandlerVariable = setInterval(timeHandler, 3000);
+
+
+        /*////////////////////17/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+
+        /* setTimeout can pass a parameter to function */
+        setTimeout(functionWake, 2000, "Parameter Passed");
+
+        function functionWake (input) {
+
+                console.log(input);
+        }
