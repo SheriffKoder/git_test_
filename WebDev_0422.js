@@ -506,3 +506,32 @@
 
                 console.log(input);
         }
+
+
+        /*////////////////////21/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        /*function lets element modified when mouse 
+        hover on the element or hover out from it*/
+
+        function MouseHover () {
+
+        let inputTest = document.getElementById('header');
+        inputTest.onmouseover = MouseChangeText;
+        inputTest.onmouseout = MouseChangeText2;
+
+        }
+
+        function MouseChangeText (x) {
+
+                var input = x.target; 
+                input.innerHTML = "input changed";
+        }
+
+        function MouseChangeText2 (x) {
+
+                var input = x.target; 
+                input.innerHTML = "input reversed";
+        }
+
+        MouseHover();
