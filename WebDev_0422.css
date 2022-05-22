@@ -326,3 +326,12 @@ table td { /* set the width of the table by its data elements*/
             /*clear: left;*/
         }
 
+
+        /* ability to add style on screen size (responsive) */
+        @media screen and (min-width: 500px) { /*give style when screen 500px or more*/
+            .Section1 {
+                background-color: red;
+
+            }
+
+        }
