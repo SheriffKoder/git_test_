@@ -306,3 +306,23 @@ table td { /* set the width of the table by its data elements*/
         .MaxWidth_KeepwithBrowserWidth {
             max-width: 800px;
         }
+
+
+
+
+        /*can set margin by %, can layout using float and margin */
+        .Nav1 {
+            border: 1px solid black;
+            width: 25%;
+            height: 50%;
+            float: left;
+
+        }
+
+        .Section1 {
+            border: 1px solid black;
+            margin-left: 25%;
+            height: 50%;
+            /*clear: left;*/
+        }
+
