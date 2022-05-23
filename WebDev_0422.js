@@ -535,3 +535,12 @@
         }
 
         MouseHover();
+
+        /*////////////////////23/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        window.onresize = resizeFunction;
+
+        function resizeFunction () {
+                console.log("page has been resized");
+        }
