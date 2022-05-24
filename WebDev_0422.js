@@ -544,3 +544,25 @@
         function resizeFunction () {
                 console.log("page has been resized");
         }
+
+
+        /*////////////////////24/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        /*functions let display mouse position */
+        mouseMoveCoordinates();
+
+        function mouseMoveCoordinates () {
+
+                let x = document.getElementById("header");
+                x.onmousemove = showCoordinates;
+        }
+
+        
+        function showCoordinates(eventObj) {
+
+                let x = eventObj.clientX; //.clientX for browser window other windows available
+                let y = eventObj.clientY;
+                console.log(x,y);
+
+        }
