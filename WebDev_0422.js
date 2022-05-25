@@ -566,3 +566,21 @@
                 console.log(x,y);
 
         }
+
+
+        /*////////////////////25/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        /*we have two types until now for function use
+        1) the normal way, Declaration 
+        2) function expression, call a function by its variable reference */
+        /*we can also pass an unamed function in the parameter and call it*/
+
+        var flyfly = function (passedFunction) {
+
+                //console.log("Hey There");
+                passedFunction();
+                }
+
+        flyfly( function () { console.log("Hey There")          } );
+
