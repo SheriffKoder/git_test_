@@ -584,3 +584,10 @@
 
         flyfly( function () { console.log("Hey There")          } );
 
+
+        /*////////////////////26/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        /*we can have a variable with the reference value and use it as a function name*/
+        var flyfly2 = flyfly;
+        flyfly2( function () { console.log("Hey There")          } );
