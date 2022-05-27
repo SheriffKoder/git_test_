@@ -360,3 +360,27 @@ table td { /* set the width of the table by its data elements*/
         #Para3 {
             flex: 1;  /*1/4 space*/
         }
+
+
+        /*///////////////////////*/
+
+
+        #RandomText2705::first-letter { /* style first letter of element */
+            background-color: yellow;
+            
+        }
+
+        #RandomText2705::first-line { /* style first line of element */
+            background-color: red;
+            
+        }
+
+        #RandomText2705::before { /* insert item before the element or ::after */
+            content: url(mochi.jpg);
+            
+        }
+
+        ::marker {  /* change the list marker style */
+            color: blue;
+            font-size: 30px;
+        }
