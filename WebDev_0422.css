@@ -384,3 +384,13 @@ table td { /* set the width of the table by its data elements*/
             color: blue;
             font-size: 30px;
         }
+
+        ::selection { /*style the selected text*/
+            color : white;
+            background: blue;
+        }
+
+        input:out-of-range { /*if you type input out of min/max range it is given a style */
+            border: 3px solid blue;
+            border-radius: 2px;
+        }
