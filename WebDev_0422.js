@@ -591,3 +591,34 @@
         /*we can have a variable with the reference value and use it as a function name*/
         var flyfly2 = flyfly;
         flyfly2( function () { console.log("Hey There")          } );
+
+
+        /*////////////////////31/05/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        /*function variable to use another function as an input, we can use any function name */
+        /*using true and false to determine statements*/
+
+
+        let answer = "no";
+
+        function processPassengers (passengers, testFunction){
+
+                if ( testFunction(passengers)) {
+                        return false;
+                }
+                return true;
+        }
+
+        function testFunctionX (input) {
+                return (input === "no");
+        }
+
+        //if no, true, then false returned
+        //if yes, false, then true returned
+
+        var processTest = processPassengers (answer, testFunctionX);
+        
+        if (!processTest) {
+                console.log("entered : no");
+        }
