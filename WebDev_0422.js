@@ -622,3 +622,30 @@
         if (!processTest) {
                 console.log("entered : no");
         }
+
+
+        /*////////////////////01/06/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        /*return variable pointing to a function based on input*/
+
+        function createDrinkOrder (passenger) {
+
+                var orderFunction;
+
+                if (passenger.ticket == "firstclass") {
+                        orderFunction = function () {
+                                        console.log("FirstClass Ticket");
+                                        }
+                }
+
+                return orderFunction;
+        }
+
+
+        let objectPassenger = {name: "John", ticket: "firstclass"};
+        let functionOption = createDrinkOrder(objectPassenger);
+
+        functionOption();
+
+        
