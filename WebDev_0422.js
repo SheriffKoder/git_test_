@@ -648,4 +648,17 @@
 
         functionOption();
 
-        
+        /*////////////////////02/06/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        function revSort (num1, num2) {
+                return (num2-num1);     //if num2-num1 >0 then num2 is greater
+        }
+
+        //sort an array and use the optional function to reverse the sort
+	var numbersArray = [60,50, 62, 58, 54, 54];
+        console.log(numbersArray);
+
+        numbersArray.sort(revSort);
+        console.log(numbersArray);
+
