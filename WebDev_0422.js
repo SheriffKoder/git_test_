@@ -657,8 +657,41 @@
 
         //sort an array and use the optional function to reverse the sort
 	var numbersArray = [60,50, 62, 58, 54, 54];
+        var lettersArray = ["a", "c", "z", "w", "d"];
         console.log(numbersArray);
 
         numbersArray.sort(revSort);
         console.log(numbersArray);
+
+        /*////////////////////03/06/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        //sort letters using sort_method
+        lettersArray.sort(letterAscComparison);
+        console.log(lettersArray);
+
+
+        //declared function, location doesnt matter
+        //extended with boolean comparison function to be used in sort method
+        function letterAscComparison (letter1, letter2) {
+        
+                //return 1+
+                if (letter1 > letter2) {
+                        return 1;
+                }
+
+                //return 0
+                else if (letter1 === letter2) {
+                        return 0;
+                }
+                //return -1+
+                else {
+                        return -1;
+
+                }
+        }
+
+        /*/////////////////////////////////////////////////*/
+
+
 
