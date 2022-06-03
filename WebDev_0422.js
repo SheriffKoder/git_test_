@@ -693,5 +693,18 @@
 
         /*/////////////////////////////////////////////////*/
 
+        /* ability to nest function in another function and pass values separately */
+        function addN (n) {
+
+                var Adder = function (x) {
+                        returns n+x;
+                }
 
 
+        }
+
+        var Adder2 = addN(2); //addN with N=2 waiting to be called
+        Adder2(2);      //Adder sub function has 2, so it returns 2+2;
+
+        
+        /*/////////////////////////////////////////////////*/
