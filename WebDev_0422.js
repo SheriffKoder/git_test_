@@ -694,17 +694,26 @@
         /*/////////////////////////////////////////////////*/
 
         /* ability to nest function in another function and pass values separately */
+        /*have to return the function*/
+        /*add an anonymous function in the timeout */
         function addN (n) {
 
                 var Adder = function (x) {
-                        returns n+x;
-                }
+                        let time = x * 500;
 
+                        setTimeout ( function () {
+                                                alert ("calculating" + x + " + " + n + " in " + time +" ms");
+                                                }       
+                                                , time);
+                        return n+x;
+                };
+
+                return Adder;
 
         }
 
         var Adder2 = addN(2); //addN with N=2 waiting to be called
-        Adder2(2);      //Adder sub function has 2, so it returns 2+2;
+        //console.log( Adder2(4) );      //Adder sub function has 2, so it returns 2+2;
 
         
         /*/////////////////////////////////////////////////*/
