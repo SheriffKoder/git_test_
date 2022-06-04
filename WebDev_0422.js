@@ -716,4 +716,29 @@
         //console.log( Adder2(4) );      //Adder sub function has 2, so it returns 2+2;
 
         
+        /*////////////////////04/06/////////////////////////*/
         /*/////////////////////////////////////////////////*/
+
+        //lexical scope, where function's local variables shadow the global variables 
+        //nesting functions in functions and un-layering them
+
+        let text2 = "Text2";
+
+        function FUN406 () {
+
+                let text3 = "Text3";
+
+                function innerFunction () {
+                        return text3;
+                }
+
+                return innerFunction;
+        }
+
+
+        var returnedInner = FUN406();   //where FUN returns a reference
+        var innerFunctionX = returnedInner(); // call this reference, returns text3
+                                        //if not call it is a reference,
+
+        console.log(returnedInner);
+        console.log(innerFunctionX);
