@@ -742,3 +742,27 @@
 
         console.log(returnedInner);
         console.log(innerFunctionX);
+
+
+        /*////////////////////05/06/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+
+        //environment is returned in variable and keeps its state
+        //new variable, new initial environment
+        //can also use parameters for shell and sub functions
+        function makeCounter (number) {
+                var count = 0;
+                return function (number2) {
+                        count = count +1;
+                        return count;
+                }
+        }
+
+        var doCount = makeCounter();
+        console.log(doCount());
+        console.log(doCount());
+        console.log(doCount());
+
+        var doCount2 = makeCounter();
+        console.log(doCount2());
