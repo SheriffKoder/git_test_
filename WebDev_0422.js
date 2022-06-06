@@ -766,3 +766,30 @@
 
         var doCount2 = makeCounter();
         console.log(doCount2());
+
+
+        /*////////////////////06/06/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        /*learn to use functions in every position using closure
+        to update its values each time the function called
+        */
+
+        /*whenever the value of a variable is changed, outside the sub function
+        closure function, the new value is assigned */
+
+        window.onload = function () {
+
+                var count = 0;
+		var message = "You clicked me ";
+		var div = document.getElementById("message");
+		var button = document.getElementById("clickme");
+
+                button.onclick = function () {    //closure function
+                        count++;
+			div.innerHTML = message + count + " times!"; //free variables div message count
+                }
+
+                message = "New Created: You clicked me ";
+
+        }
