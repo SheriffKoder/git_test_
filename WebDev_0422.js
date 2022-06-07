@@ -793,3 +793,28 @@
                 message = "New Created: You clicked me ";
 
         }
+
+
+        /*////////////////////07/06/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+        /* as another way to make our code concise 
+        instead of using a variable for function expression 
+        we can assign the expression directly but have to use brackets */
+
+        let nameX = function (food) {
+                if (food === "cookies")
+                        alert ("cookies here");
+
+                else if (food === "cake")
+                        alert("cake here");
+        }
+
+        // nameX ("cookies");
+        (function (food) {
+                if (food === "cookies")
+                        alert ("cookies here");
+
+                else if (food === "cake")
+                        alert("cake here");
+        }) ("cookies");
