@@ -802,6 +802,7 @@
         instead of using a variable for function expression 
         we can assign the expression directly but have to use brackets */
 
+        /*
         let nameX = function (food) {
                 if (food === "cookies")
                         alert ("cookies here");
@@ -818,3 +819,32 @@
                 else if (food === "cake")
                         alert("cake here");
         }) ("cookies");
+        */
+
+        /*////////////////////09/06/////////////////////////*/
+        /*/////////////////////////////////////////////////*/
+
+
+        function inject (value) {
+                return value;
+        }
+
+        function administer (patient, dosagevalue, time) {
+                console.log(patient + dosagevalue + time);
+        }
+
+        //let FF = 
+        let patientV = "Name";
+        let dosageV = 88;
+        let timeV = 100;
+        administer (patientV, (function (dosageV) {
+                if (dosageV > 0){
+                    let x = inject(dosageV);
+                    return x;
+                }
+        })(dosageV)
+                 ,timeV);
+
+       
+
+        //console.log(FF(dosageV));
