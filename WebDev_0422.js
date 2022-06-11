@@ -861,11 +861,22 @@
                 this.weight = weight;
         }
 
+        //11/06 Adding another Action_object where we can pass in the Dog_Object
+        function Actions (selected) {
+                this.dog = selected;
+                this.bark = "Woof Woof";
+        }
+
 
         var fido = new Dog("Fido", "Mixed", 38);
         var fluffy = new Dog("Fluffy", "Poodle", 30);
         var spot = new Dog("Spot", "Chihuahua", 10);
         var dogs = [fido, fluffy, spot];
+
+        //11/06 Action_Object now is using a fido_Dog_Object
+        var Action_fido = new Actions(fido);
+        console.log(Action_fido.bark);
+
 
         for (var i=0; i< dogs.length; i++) {
                 var size = "small";
@@ -876,6 +887,9 @@
 
                 console.log ("Dog: " 	+ dogs[i].name
                                                                  + " is a " + size
-                                                                 + " " + dogs[i].breed);
+                                                                 + " " + dogs[i].breed
+                                                                 );
 
         }
+
+
