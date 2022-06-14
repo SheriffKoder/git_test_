@@ -864,7 +864,10 @@
         //11/06 Adding another Action_object where we can pass in the Dog_Object
         function Actions (selected) {
                 this.dog = selected;
-                this.bark = "Woof Woof";
+                //this.bark = "Woof Woof";
+                this.bark = function () {
+                        console.log("Woof Woof2");
+                }
         }
 
 
@@ -875,8 +878,8 @@
 
         //11/06 Action_Object now is using a fido_Dog_Object
         var Action_fido = new Actions(fido);
-        console.log(Action_fido.bark);
-
+        //console.log(Action_fido.bark);
+        Actions(fido).bark();
 
         for (var i=0; i< dogs.length; i++) {
                 var size = "small";
