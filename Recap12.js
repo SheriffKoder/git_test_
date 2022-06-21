@@ -301,4 +301,33 @@
 	}
 
 
-	queryFunction();
+	//queryFunction();
+
+
+	/*////////////////////14/05/////////////////////////*/
+	/*//////////////////////////////////////////////////*/
+
+
+	//this is an anonymous function
+	let XV = function (parameterX) {
+		if (parameterX === 1) {
+			return "one";
+		}
+
+		else {
+			return "not one";
+		}
+	}
+
+	//using the function as a parameter
+
+	function administer (input1, input2, input3) {
+
+		console.log(input1);
+		console.log(input2);
+		console.log(input3);
+
+	}
+
+	administer (1, (XV)(1), 3);
+	//we can replace this XV with the whole function in a bracket
