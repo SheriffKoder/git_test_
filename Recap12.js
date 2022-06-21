@@ -331,3 +331,32 @@
 
 	administer (1, (XV)(1), 3);
 	//we can replace this XV with the whole function in a bracket
+
+
+	/*//////////////////////////////////////////////////*/
+	//creating objects using object literals
+	//using this.variable or function
+
+	function Dog (name, type, number) {
+
+		this.nameCode = name;
+		this.typeCode = type;
+		this.numberCode = number;
+		this.spotLocation = function () {
+
+						if(this.numberCode == "01") {
+							this.position = "first";
+							console.log(this.position);
+						}
+
+					}
+	}
+
+
+	var fido = new Dog ("Fido", "Sheppard", "01");
+	var bido = new Dog ("Bido", "Shire", "02");
+
+	var Dogs = [fido, bido];
+
+	console.log(Dogs[0].typeCode);
+	fido.spotLocation();
