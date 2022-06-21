@@ -336,12 +336,26 @@
 	/*//////////////////////////////////////////////////*/
 	//creating objects using object literals
 	//using this.variable or function
+	//also we can use an object inside an object
 
-	function Dog (name, type, number) {
+	//1. implement the new object function, 
+	//2. define/call the object 
+	//3. add to object function parameters
+	//4. add to define/call
+	//5. call.call
+
+	function skinColor (color1, color2) {
+		this.SkinColor1 = color1;
+		this.SkinColor2 = color2;
+	}
+
+
+	function Dog (name, type, number, skin) {
 
 		this.nameCode = name;
 		this.typeCode = type;
 		this.numberCode = number;
+		this.skinC = skin;
 		this.spotLocation = function () {
 
 						if(this.numberCode == "01") {
@@ -353,10 +367,14 @@
 	}
 
 
-	var fido = new Dog ("Fido", "Sheppard", "01");
+	var FidoSkinColor = new skinColor ("Golden", "Black");
+
+	var fido = new Dog ("Fido", "Sheppard", "01", FidoSkinColor);
 	var bido = new Dog ("Bido", "Shire", "02");
 
 	var Dogs = [fido, bido];
 
 	console.log(Dogs[0].typeCode);
+	console.log(Dogs[0].skinC.SkinColor1);
+
 	fido.spotLocation();
